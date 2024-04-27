@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+	--color-text: #4a4737;
+}
+
+.app {
+	color: var(--color-text);
+	font-family: "Ubuntu Mono", sans-serif;
+	text-align: center;
+}
+* {
+	box-sizing: border-box;
+}
+
+.app-main {
+	min-height: 300vh;
+	background-image: linear-gradient(135deg, #fff6b7 10%, #f6416c 100%);
+}
+.app-header {
+	color: white;
+	font-size: calc(10px + 2vmin);
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 80px;
+	background: rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 #b1af9e5e;
+	backdrop-filter: blur(7.5px);
+	-webkit-backdrop-filter: blur(7.5px);
+	border-radius: 2px;
+	border: 1px solid rgba(255, 255, 255, 0.18);
+}
+.container {
+	display: flex;
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+/* .App-logo {
+	height: 40vmin;
+	pointer-events: none;
+}
+@media (prefers-reduced-motion: no-preference) {
+	.App-logo {
+		animation: App-logo-spin infinite 20s linear;
+	}
+} */

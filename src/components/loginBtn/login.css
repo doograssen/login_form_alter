@@ -1,0 +1,10 @@
+.login {
+	margin-left: auto;
+	background: none;
+	border: none;
+	transition: filter 0.4s;
+	cursor: pointer;
+}
+.login:hover {
+	filter: hue-rotate(40deg);
+}
