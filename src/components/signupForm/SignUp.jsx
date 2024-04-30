@@ -1,8 +1,10 @@
-import { useState } from "react";
-import { FormField } from "../formField/FormField";
-import { useStore } from "../hooks/useStore";
+import { useState } from 'react';
+import { FormField } from '../formField/FormField';
+import { useStore } from '../hooks/useStore';
+import { useForm } from 'react-hook-form';
 import './signup.css';
 import * as yup from 'yup';
+import { yupResolver } from '@hookform/resolvers/yup';
 
 
 const sendFormData = (formData) => {
@@ -54,15 +56,6 @@ const validateAndGetErrorMessage = (scheme, value) => {
 	}
 	return errorMessage;
 };
-
-// const validatePasswordConfirm = (value, compareValue) => {
-// 	let errorMessage = null;
-// 	if (value !== compareValue && compareValue !== '') {
-// 		errorMessage = ERRORS.MATCHING_PASSWORDS;
-// 	}
-// 	return errorMessage;
-// };
-
 
 export const SignUp = () => {
 	const {getState, updateStateByName, updateFullState} = useStore();
